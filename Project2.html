@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 25px;
+    height: 25px;
+    background: red;
+    position: absolute;
+    display: inline-block;
+    margin:10px;
+    
+}
+
+#Asteroid1 {
+    position: relative;
+    left: 0px;
+    animation: mymove 5s 1, mymove2 5s 5s 1;
+}
+
+#Asteroid2 {
+    position: relative;
+    left: 25px;
+	animation: nomove 2s 1, mymove2 5s 2s 1;
+}
+
+#Asteroid3 {
+    position: relative;
+    left: 50px;
+	animation: nomove 4s 1, mymove2 5s 4s 1;
+}
+
+#Asteroid4 {
+    position: relative;
+    left: 75px;
+	animation: nomove 6s 1, mymove2 5s 6s 1;
+}
+
+#Asteroid5 {
+    position: relative;
+    left: 100px;
+	animation: nomove 8s 1, mymove2 5s 8s 1;
+}
+
+#Asteroid6 {
+    position: relative;
+    left: 125px;
+	animation: nomove 10s 1, mymove2 5s 10s 1;
+}
+
+#Asteroid7 {
+    position: relative;
+    left: 150px;
+	animation: nomove 12s 1, mymove2 5s 12s 1;
+}
+
+#Asteroid8 {
+    position: relative;
+    left: 175px;
+	animation: nomove 14s 1, mymove2 5s 14s 1;
+}
+
+#Asteroid9 {
+    position: relative;
+    left: 200px;
+	animation: nomove 16s 1, mymove2 5s 16s 1;
+}
+
+#Asteroid10 {
+    position: relative;
+    left: 225px;
+	animation: nomove 18s 1, mymove2 5s 18s 1;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 75px; top: 200px;}
+    75%  {left: 150px; top: 50px}
+    100% {left: 225px; top: 100px;}
+}
+
+@keyframes mymove2 {
+    0%   {top: 300px;}
+    25%  {top: 400px;}
+    75%  {top: 500px}
+    100% {top: 600px;}
+}
+
+@keyframes nomove {
+    0%   {top: 0px;}
+    100%  {top: 0px;}
+}
+</style>
+</head>
+<body>
+
+<div id="Asteroid1"></div>
+<div id="Asteroid2"></div>
+<div id="Asteroid3"></div>
+<div id="Asteroid4"></div>
+<div id="Asteroid5"></div>
+<div id="Asteroid6"></div>
+<div id="Asteroid7"></div>
+<div id="Asteroid8"></div>
+<div id="Asteroid9"></div>
+<div id="Asteroid10"></div>
+
+</body>
+</html>
