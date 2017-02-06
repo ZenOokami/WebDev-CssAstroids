@@ -3,107 +3,605 @@
 <head>
     <style>
         div {
-            width: 25px;
-            height: 25px;
+            width: 50px;
+            height: 50px;
             background: red;
             position: absolute;
             display: inline-block;
             margin: 10px;
-
+            text-align: center;
+            visibility: hidden;
         }
 
         #Asteroid1 {
             position: relative;
             left: 0px;
-            animation: mymove 5s 1, mymove2 5s 5s 1;
+            animation: mymove1 15s 1;
+            color: red;
         }
 
         #Asteroid2 {
             position: relative;
             left: 25px;
-            animation: nomove 2s 1, mymove2 5s 2s 1;
+            animation: nomove 3s 1, mymove2 15s 3s 1;
+            color: red;
         }
 
         #Asteroid3 {
             position: relative;
             left: 50px;
-            animation: nomove 4s 1, mymove2 5s 4s 1;
+            animation: nomove 1s 1, mymove3 15s 1s 1;
+            color: red;
         }
 
         #Asteroid4 {
             position: relative;
             left: 75px;
-            animation: nomove 6s 1, mymove2 5s 6s 1;
+            animation: nomove 5s 1, mymove4 15s 5s 1;
+            color: red;
         }
 
         #Asteroid5 {
             position: relative;
             left: 100px;
-            animation: nomove 8s 1, mymove2 5s 8s 1;
+            animation: nomove 4s 1, mymove5 15s 4s 1;
+            color: red;
         }
 
         #Asteroid6 {
             position: relative;
             left: 125px;
-            animation: nomove 10s 1, mymove2 5s 10s 1;
+            animation: nomove 2s 1, mymove6 15s 2s 1;
+            color: red;
         }
 
         #Asteroid7 {
             position: relative;
             left: 150px;
-            animation: nomove 12s 1, mymove2 5s 12s 1;
+            animation: nomove 9s 1, mymove7 15s 9s 1;
+            color: red;
         }
 
         #Asteroid8 {
             position: relative;
             left: 175px;
-            animation: nomove 14s 1, mymove2 5s 14s 1;
+            animation: nomove 7s 1, mymove8 15s 7s 1;
+            color: red;
         }
 
         #Asteroid9 {
             position: relative;
             left: 200px;
-            animation: nomove 16s 1, mymove2 5s 16s 1;
+            animation: nomove 8s 1, mymove9 15s 8s 1;
+            color: red;
         }
 
         #Asteroid10 {
             position: relative;
             left: 225px;
-            animation: nomove 18s 1, mymove2 5s 18s 1;
+            animation: nomove 6s 1, mymove10 15s 6s 1;
+            color: red;
+        }
+
+        #Base {
+        	background-color: Black;
+        	position: fixed;
+        	bottom: 0;
+        	width: 40%;
+        	margin-bottom: 0;
+        	margin-left: -30%;
+        	color: white;
+        	visibility: visible;
         }
 
         /* Standard syntax */
-        @keyframes mymove {
+        @keyframes mymove1 {
             0% {
                 left: 0px;
                 top: 0px;
+        		visibility: visible;
             }
-            25% {
-                left: 75px;
+            5% {
+                left: 30px;
+                top: 100px;
+            }
+            10% {
+                left: 60px;
                 top: 200px;
             }
-            75% {
+            15% {
+                left: 90px;
+                top: 300px;
+            }
+            20% {
+                left: 120px;
+                top: 400px;
+            }
+            25% {
                 left: 150px;
-                top: 50px
+                top: 500px;
+            }
+            30% {
+                left: 180px;
+                top: 600px;
+            }
+            35% {
+                left: 210px;
+                top: 700px;
+            }
+            40% {
+                left: 240px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
             }
             100% {
-                left: 225px;
-                top: 100px;
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
             }
         }
 
         @keyframes mymove2 {
             0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: 25px;
+                top: 100px;
+            }
+            10% {
+                left: 55px;
+                top: 200px;
+            }
+            15% {
+                left: 85px;
                 top: 300px;
             }
-            25% {
+            20% {
+                left: 115px;
                 top: 400px;
             }
-            75% {
-                top: 500px
+            25% {
+                left: 145px;
+                top: 500px;
+            }
+            30% {
+                left: 175px;
+                top: 600px;
+            }
+            35% {
+                left: 205px;
+                top: 700px;
+            }
+            40% {
+                left: 215px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
             }
             100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove3 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: 30px;
+                top: 100px;
+            }
+            10% {
+                left: 60px;
+                top: 200px;
+            }
+            15% {
+                left: 90px;
+                top: 300px;
+            }
+            20% {
+                left: 120px;
+                top: 400px;
+            }
+            25% {
+                left: 150px;
+                top: 500px;
+            }
+            30% {
+                left: 160px;
                 top: 600px;
+            }
+            35% {
+                left: 170px;
+                top: 700px;
+            }
+            40% {
+                left: 190px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove4 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: 30px;
+                top: 100px;
+            }
+            10% {
+                left: 60px;
+                top: 200px;
+            }
+            15% {
+                left: 90px;
+                top: 300px;
+            }
+            20% {
+                left: 120px;
+                top: 400px;
+            }
+            25% {
+                left: 150px;
+                top: 500px;
+            }
+            30% {
+                left: 180px;
+                top: 600px;
+            }
+            35% {
+                left: 210px;
+                top: 700px;
+            }
+            40% {
+                left: 240px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove5 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: 30px;
+                top: 100px;
+            }
+            10% {
+                left: 60px;
+                top: 200px;
+            }
+            15% {
+                left: 90px;
+                top: 300px;
+            }
+            20% {
+                left: 120px;
+                top: 400px;
+            }
+            25% {
+                left: 150px;
+                top: 500px;
+            }
+            30% {
+                left: 180px;
+                top: 600px;
+            }
+            35% {
+                left: 210px;
+                top: 700px;
+            }
+            40% {
+                left: 240px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove6 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: 10px;
+                top: 100px;
+            }
+            10% {
+                left: 20px;
+                top: 200px;
+            }
+            15% {
+                left: 30px;
+                top: 300px;
+            }
+            20% {
+                left: 40px;
+                top: 400px;
+            }
+            25% {
+                left: 50px;
+                top: 500px;
+            }
+            30% {
+                left: 60px;
+                top: 600px;
+            }
+            35% {
+                left: 70px;
+                top: 700px;
+            }
+            40% {
+                left: 80px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove7 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: -5px;
+                top: 100px;
+            }
+            10% {
+                left:-10px;
+                top: 200px;
+            }
+            15% {
+                left: -15px;
+                top: 300px;
+            }
+            20% {
+                left: -20px;
+                top: 400px;
+            }
+            25% {
+                left: -25px;
+                top: 500px;
+            }
+            30% {
+                left: -30px;
+                top: 600px;
+            }
+            35% {
+                left: -35px;
+                top: 700px;
+            }
+            40% {
+                left: -40px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove8 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: -5px;
+                top: 100px;
+            }
+            10% {
+                left:-10px;
+                top: 200px;
+            }
+            15% {
+                left: -15px;
+                top: 300px;
+            }
+            20% {
+                left: -20px;
+                top: 400px;
+            }
+            25% {
+                left: -25px;
+                top: 500px;
+            }
+            30% {
+                left: -30px;
+                top: 600px;
+            }
+            35% {
+                left: -35px;
+                top: 700px;
+            }
+            40% {
+                left: -40px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove9 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: -5px;
+                top: 100px;
+            }
+            10% {
+                left:-10px;
+                top: 200px;
+            }
+            15% {
+                left: -15px;
+                top: 300px;
+            }
+            20% {
+                left: -20px;
+                top: 400px;
+            }
+            25% {
+                left: -25px;
+                top: 500px;
+            }
+            30% {
+                left: -30px;
+                top: 600px;
+            }
+            35% {
+                left: -35px;
+                top: 700px;
+            }
+            40% {
+                left: -40px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+        }
+
+        @keyframes mymove10 {
+            0% {
+                left: 0px;
+                top: 0px;
+	        	visibility: visible;
+            }
+            5% {
+                left: -5px;
+                top: 100px;
+            }
+            10% {
+                left:-10px;
+                top: 200px;
+            }
+            15% {
+                left: -15px;
+                top: 300px;
+            }
+            20% {
+                left: -20px;
+                top: 400px;
+            }
+            25% {
+                left: -25px;
+                top: 500px;
+            }
+            30% {
+                left: -30px;
+                top: 600px;
+            }
+            35% {
+                left: -35px;
+                top: 700px;
+            }
+            40% {
+                left: -40px;
+                top: 800px;
+                background-color: red;
+            }
+            50% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
+            }
+            100% {
+            	background-color: black;
+            	left: 250px;
+            	top: 300px;
             }
         }
 
@@ -115,51 +613,42 @@
                 top: 0px;
             }
         }
-        
-        .c1[type=checkbox]:checked ~ #Asteroid1{
-            visibility: hidden;
 
+        .c1[type=checkbox]:checked ~ #Asteroid1{
+            animation: nomove 60s 1;
         }
         .c2[type=checkbox]:checked ~ #Asteroid2{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c3[type=checkbox]:checked ~ #Asteroid3{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c4[type=checkbox]:checked ~ #Asteroid4{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c5[type=checkbox]:checked ~ #Asteroid5{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c6[type=checkbox]:checked ~ #Asteroid6{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c7[type=checkbox]:checked ~ #Asteroid7{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c8[type=checkbox]:checked ~ #Asteroid8{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c9[type=checkbox]:checked ~ #Asteroid9{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
         .c10[type=checkbox]:checked ~ #Asteroid10{
-            visibility: hidden;
-
+            animation: nomove 60s 1;
         }
 
         /*.asteroid01:checked ~ .Asteroid1{*/
             /*opacity: 1;*/
         /*}*/
+
     </style>
 </head>
 <body>
@@ -188,16 +677,18 @@
 
 <br><br>
 
-<div id="Asteroid1"></div>
-<div id="Asteroid2"></div>
-<div id="Asteroid3"></div>
-<div id="Asteroid4"></div>
-<div id="Asteroid5"></div>
-<div id="Asteroid6"></div>
-<div id="Asteroid7"></div>
-<div id="Asteroid8"></div>
-<div id="Asteroid9"></div>
-<div id="Asteroid10"></div>
+<!-- <div id="Asteroid1">You lose!</div> -->
+<div id="Asteroid2">You lose!</div>
+<div id="Asteroid3">You lose!</div>
+<div id="Asteroid4">You lose!</div>
+<div id="Asteroid5">You lose!</div>
+<div id="Asteroid6">You lose!</div>
+<div id="Asteroid7">You lose!</div>
+<div id="Asteroid8">You lose!</div>
+<div id="Asteroid9">You lose!</div>
+<div id="Asteroid10">You lose!</div>
+
+<div id="Base">Save us!</div>
 
 </body>
 </html>
