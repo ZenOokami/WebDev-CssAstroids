@@ -1,99 +1,192 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-    width: 25px;
-    height: 25px;
-    background: red;
-    position: absolute;
-    display: inline-block;
-    margin:10px;
-    
-}
+    <style>
+        div {
+            width: 25px;
+            height: 25px;
+            background: red;
+            position: absolute;
+            display: inline-block;
+            margin: 10px;
 
-#Asteroid1 {
-    position: relative;
-    left: 0px;
-    animation: mymove 5s 1, mymove2 5s 5s 1;
-}
+        }
 
-#Asteroid2 {
-    position: relative;
-    left: 25px;
-	animation: nomove 2s 1, mymove2 5s 2s 1;
-}
+        #Asteroid1 {
+            position: relative;
+            left: 0px;
+            animation: mymove 5s 1, mymove2 5s 5s 1;
+        }
 
-#Asteroid3 {
-    position: relative;
-    left: 50px;
-	animation: nomove 4s 1, mymove2 5s 4s 1;
-}
+        #Asteroid2 {
+            position: relative;
+            left: 25px;
+            animation: nomove 2s 1, mymove2 5s 2s 1;
+        }
 
-#Asteroid4 {
-    position: relative;
-    left: 75px;
-	animation: nomove 6s 1, mymove2 5s 6s 1;
-}
+        #Asteroid3 {
+            position: relative;
+            left: 50px;
+            animation: nomove 4s 1, mymove2 5s 4s 1;
+        }
 
-#Asteroid5 {
-    position: relative;
-    left: 100px;
-	animation: nomove 8s 1, mymove2 5s 8s 1;
-}
+        #Asteroid4 {
+            position: relative;
+            left: 75px;
+            animation: nomove 6s 1, mymove2 5s 6s 1;
+        }
 
-#Asteroid6 {
-    position: relative;
-    left: 125px;
-	animation: nomove 10s 1, mymove2 5s 10s 1;
-}
+        #Asteroid5 {
+            position: relative;
+            left: 100px;
+            animation: nomove 8s 1, mymove2 5s 8s 1;
+        }
 
-#Asteroid7 {
-    position: relative;
-    left: 150px;
-	animation: nomove 12s 1, mymove2 5s 12s 1;
-}
+        #Asteroid6 {
+            position: relative;
+            left: 125px;
+            animation: nomove 10s 1, mymove2 5s 10s 1;
+        }
 
-#Asteroid8 {
-    position: relative;
-    left: 175px;
-	animation: nomove 14s 1, mymove2 5s 14s 1;
-}
+        #Asteroid7 {
+            position: relative;
+            left: 150px;
+            animation: nomove 12s 1, mymove2 5s 12s 1;
+        }
 
-#Asteroid9 {
-    position: relative;
-    left: 200px;
-	animation: nomove 16s 1, mymove2 5s 16s 1;
-}
+        #Asteroid8 {
+            position: relative;
+            left: 175px;
+            animation: nomove 14s 1, mymove2 5s 14s 1;
+        }
 
-#Asteroid10 {
-    position: relative;
-    left: 225px;
-	animation: nomove 18s 1, mymove2 5s 18s 1;
-}
+        #Asteroid9 {
+            position: relative;
+            left: 200px;
+            animation: nomove 16s 1, mymove2 5s 16s 1;
+        }
 
-/* Standard syntax */
-@keyframes mymove {
-    0%   {left: 0px; top: 0px;}
-    25%  {left: 75px; top: 200px;}
-    75%  {left: 150px; top: 50px}
-    100% {left: 225px; top: 100px;}
-}
+        #Asteroid10 {
+            position: relative;
+            left: 225px;
+            animation: nomove 18s 1, mymove2 5s 18s 1;
+        }
 
-@keyframes mymove2 {
-    0%   {top: 300px;}
-    25%  {top: 400px;}
-    75%  {top: 500px}
-    100% {top: 600px;}
-}
+        /* Standard syntax */
+        @keyframes mymove {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                left: 75px;
+                top: 200px;
+            }
+            75% {
+                left: 150px;
+                top: 50px
+            }
+            100% {
+                left: 225px;
+                top: 100px;
+            }
+        }
 
-@keyframes nomove {
-    0%   {top: 0px;}
-    100%  {top: 0px;}
-}
-</style>
+        @keyframes mymove2 {
+            0% {
+                top: 300px;
+            }
+            25% {
+                top: 400px;
+            }
+            75% {
+                top: 500px
+            }
+            100% {
+                top: 600px;
+            }
+        }
+
+        @keyframes nomove {
+            0% {
+                top: 0px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+        
+        .c1[type=checkbox]:checked ~ #Asteroid1{
+            visibility: hidden;
+
+        }
+        .c2[type=checkbox]:checked ~ #Asteroid2{
+            visibility: hidden;
+
+        }
+        .c3[type=checkbox]:checked ~ #Asteroid3{
+            visibility: hidden;
+
+        }
+        .c4[type=checkbox]:checked ~ #Asteroid4{
+            visibility: hidden;
+
+        }
+        .c5[type=checkbox]:checked ~ #Asteroid5{
+            visibility: hidden;
+
+        }
+        .c6[type=checkbox]:checked ~ #Asteroid6{
+            visibility: hidden;
+
+        }
+        .c7[type=checkbox]:checked ~ #Asteroid7{
+            visibility: hidden;
+
+        }
+        .c8[type=checkbox]:checked ~ #Asteroid8{
+            visibility: hidden;
+
+        }
+        .c9[type=checkbox]:checked ~ #Asteroid9{
+            visibility: hidden;
+
+        }
+        .c10[type=checkbox]:checked ~ #Asteroid10{
+            visibility: hidden;
+
+        }
+
+        /*.asteroid01:checked ~ .Asteroid1{*/
+            /*opacity: 1;*/
+        /*}*/
+    </style>
 </head>
 <body>
+
+
+
+<!--<input class="asteroid asteroid01" type="radio" id="ast1">-->
+<!--<input type="radio">-->
+<!--<input type="radio">-->
+
+
+<!--<label for="ast1" class="Asteroid1"><span></span></label>-->
+
+<!--<input id="A1" type="checkbox">-->
+
+<input class="c1" type="checkbox" value="Destroy 1">
+<input class="c2" type="checkbox" value="Destroy 2">
+<input class="c3" type="checkbox" value="Destroy 3">
+<input class="c4" type="checkbox" value="Destroy 4">
+<input class="c5" type="checkbox" value="Destroy 5">
+<input class="c6" type="checkbox" value="Destroy 6">
+<input class="c7" type="checkbox" value="Destroy 7">
+<input class="c8" type="checkbox" value="Destroy 8">
+<input class="c9" type="checkbox" value="Destroy 9">
+<input class="c10" type="checkbox" value="Destroy 10">
+
+<br><br>
 
 <div id="Asteroid1"></div>
 <div id="Asteroid2"></div>
